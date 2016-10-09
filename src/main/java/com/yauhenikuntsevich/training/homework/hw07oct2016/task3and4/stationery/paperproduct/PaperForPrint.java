@@ -6,4 +6,8 @@ public class PaperForPrint extends PaperProduct{
 		super(price);
 	}
 
+	@Override
+	public String toString() {
+		return "PaperForPrint";
+	}
 }

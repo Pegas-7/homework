@@ -6,4 +6,8 @@ public class Notebook extends PaperProduct{
 		super(price);
 	}
 
+	@Override
+	public String toString() {
+		return "Notebook";
+	}
 }

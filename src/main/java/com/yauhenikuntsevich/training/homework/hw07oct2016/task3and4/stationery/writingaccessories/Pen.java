@@ -5,5 +5,9 @@ public class Pen extends WritingAccessories{
 	public Pen(double price) {
 		super(price);
 	}
-
+	
+	@Override
+	public String toString() {
+		return "Pen";
+	}
 }
