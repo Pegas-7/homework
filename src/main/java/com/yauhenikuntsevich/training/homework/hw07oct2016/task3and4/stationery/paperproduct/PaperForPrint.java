@@ -1,4 +1,4 @@
-package com.yauhenikuntsevich.training.homework.hw07oct2016.task3.stationery.paperproduct;
+package com.yauhenikuntsevich.training.homework.hw07oct2016.task3and4.stationery.paperproduct;
 
 public class PaperForPrint extends PaperProduct{
 
