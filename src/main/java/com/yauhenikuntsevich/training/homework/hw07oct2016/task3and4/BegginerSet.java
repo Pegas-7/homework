@@ -1,6 +1,7 @@
 package com.yauhenikuntsevich.training.homework.hw07oct2016.task3and4;
 
 import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -11,17 +12,17 @@ import com.yauhenikuntsevich.training.homework.hw07oct2016.task3and4.stationery.
 import com.yauhenikuntsevich.training.homework.hw07oct2016.task3and4.stationery.writingaccessories.Pencil;
 
 public class BegginerSet {
-	private Set<Stationery> stationeries;
+	private LinkedList<Stationery> stationeries;
 
-	public BegginerSet(Pen pen, Pencil pencil, PaperForPrint paperForPrint, Notebook notebook, Comparator<Stationery> comparator) {
-		this.stationeries = new TreeSet<>(comparator);
-		stationeries.add(pen);
-		stationeries.add(pencil);
-		stationeries.add(paperForPrint);
-		stationeries.add(notebook);
+	public BegginerSet() {
+		this.stationeries = new LinkedList<>();
+		stationeries.add(new Pen(7));
+		stationeries.add(new Pencil(4));
+		stationeries.add(new PaperForPrint(15));
+		stationeries.add(new Notebook(11));
 	}
 
-	public Set<Stationery> getStationeries() {
+	public LinkedList<Stationery> getStationeries() {
 		return stationeries;
 	}
 }
