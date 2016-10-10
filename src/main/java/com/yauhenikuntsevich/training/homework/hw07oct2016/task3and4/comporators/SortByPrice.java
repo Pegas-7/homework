@@ -7,9 +7,6 @@ import com.yauhenikuntsevich.training.homework.hw07oct2016.task3and4.stationery.
 public class SortByPrice implements Comparator<Stationery>{
 	@Override
 	public int compare(Stationery o1, Stationery o2) {
-		if (o1.getPrice() - o2.getPrice() != 0) {
 			return (int) (o1.getPrice() - o2.getPrice());
-		}
-		return 1;
 	}
 }
